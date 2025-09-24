@@ -1,1 +1,146 @@
-eehehehehe
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CyberSafe — Ethical Hacking & Security</title>
+  <meta name="description" content="CyberSafe — resources, labs and ethical guidance for learning cybersecurity and defensive skills." />
+
+  <style>
+    /* Minimal, elegant styling for GitHub Pages */
+    :root{
+      --bg:#0f1724; --card:#071020; --muted:#9fb3c8; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
+      --radius:14px; --maxw:980px;
+      --grad: linear-gradient(135deg,#06b6d4 0%, #7c3aed 100%);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 400px at 10% 10%, rgba(7,18,36,0.6), transparent),
+                  linear-gradient(180deg,#031226 0%, #071025 100%);
+      color:#e6eef6; -webkit-font-smoothing:antialiased; padding:32px;
+    }
+    .wrap{max-width:var(--maxw); margin:0 auto}
+    header{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:28px}
+    .brand{display:flex; gap:12px; align-items:center}
+    .logo{
+      width:64px;height:64px;border-radius:16px; display:flex; align-items:center; justify-content:center;
+      background:var(--grad); color:#021226; font-weight:700; font-size:20px; box-shadow:0 10px 30px rgba(7,12,22,0.6)
+    }
+    h1{margin:0;font-size:20px}
+    p.lead{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+    main{display:grid; grid-template-columns: 1fr 320px; gap:22px;}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+          border-radius:var(--radius); padding:20px; box-shadow:0 6px 22px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.03)}
+    .hero{padding:28px}
+    .hero h2{margin:0 0 8px; font-size:26px}
+    .muted{color:var(--muted); font-size:14px}
+
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    a.cta{display:inline-block; margin-top:12px; padding:10px 14px; border-radius:10px; background:var(--grad); color:#021226; font-weight:600; text-decoration:none}
+    ul.clean{padding-left:18px; margin:8px 0 0; color:var(--muted)}
+
+    aside .small{font-size:13px; color:var(--muted)}
+    footer{margin-top:18px; color:var(--muted); font-size:13px; text-align:center}
+
+    /* subtle animated accent */
+    .accent-line{height:4px; border-radius:999px; background:linear-gradient(90deg, rgba(6,182,212,0.12), rgba(124,58,237,0.12)); margin-top:12px}
+
+    @media (max-width:980px){
+      main{grid-template-columns:1fr}
+      .logo{width:56px;height:56px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">CS</div>
+        <div>
+          <h1>CyberSafe</h1>
+          <p class="lead">Ethical hacking • Labs • Certifications • Defensive tools</p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div class="muted">GitHub Pages • Static</div>
+        <a class="cta" href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">My GitHub →</a>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <article class="card hero">
+          <h2>Learn ethical hacking the smart way</h2>
+          <p class="muted">CyberSafe promotes legal, defensive, and educational practices only. Use isolated labs and platforms designed for learning. Never test systems without explicit permission.</p>
+
+          <div style="margin-top:16px" class="grid-2">
+            <div>
+              <h3 style="margin:0 0 8px">Getting started</h3>
+              <ul class="clean">
+                <li>Understand networking & protocols</li>
+                <li>Practice in isolated VMs and containers</li>
+                <li>Learn secure coding & vulnerability remediation</li>
+              </ul>
+            </div>
+            <div>
+              <h3 style="margin:0 0 8px">Practice safely</h3>
+              <ul class="clean">
+                <li>Use OWASP Juice Shop and CTF platforms</li>
+                <li>Create local labs (no internet)</li>
+                <li>Document scope and consent</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accent-line"></div>
+
+          <section style="margin-top:16px">
+            <h3 style="margin:0 0 8px">Resources</h3>
+            <ul class="clean">
+              <li>OWASP — application security guidance</li>
+              <li>CTF platforms — practice legally and learn</li>
+              <li>Certifications — Security+, OSCP for professionals</li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="card" style="margin-top:16px">
+          <h3 style="margin:0 0 8px">Principles & ethics</h3>
+          <ul class="clean">
+            <li><strong>Consent:</strong> only test what you own or are authorized to test.</li>
+            <li><strong>Responsible disclosure:</strong> notify vendors securely and privately.</li>
+            <li><strong>Privacy:</strong> protect user data and never exfiltrate.</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin:0 0 8px">Quick Links</h3>
+          <ul class="clean">
+            <li><a href="https://owasp.org" target="_blank" rel="noopener">OWASP</a></li>
+            <li><a href="https://ctftime.org" target="_blank" rel="noopener">CTFtime</a></li>
+            <li><a href="https://www.cybrary.it" target="_blank" rel="noopener">Cybrary</a></li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 style="margin:0 0 8px">Quick tips</h3>
+          <p class="small">Always isolate labs from production. Keep snapshots and backups. Keep learning — security is a practice, not a one-time task.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Made for education and awareness • No exploit instructions provided • © <span id="year"></span> CyberSafe</p>
+    </footer>
+  </div>
+
+  <script>
+    // small JS: update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
